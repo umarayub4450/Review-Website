@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Restaurants in Peshawar</title>
+    <meta name="description" content="Discover the best food in Peshawar with our guide to the top 10 restaurants. Read reviews, place orders, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fa-solid fa-utensils"></i>
+                <h1>Peshawar Bites</h1>
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#restaurants">Top 10 Restaurants</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+        <div class="hero">
+            <div class="hero-content">
+                <h2>The Culinary Crown of Khyber Pakhtunkhwa</h2>
+                <p>Explore the legendary flavors of Peshawar. From Charsi Tikka to exquisite Chapli Kababs.</p>
+                <a href="#restaurants" class="cta-button">Discover Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="home">
+        <section id="restaurants" class="restaurants-section">
+            <div class="section-header">
+                <h2>Top 10 Picks</h2>
+                <p>Curated selections for the ultimate dining experience</p>
+            </div>
+            
+            <div id="restaurant-container" class="restaurant-grid">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Restaurant Details -->
+    <div id="restaurant-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-body">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Peshawar Bites. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
