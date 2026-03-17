@@ -12,7 +12,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <!-- Premium Dark Mode Background Effects -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    
+    <!-- Left Navigation Sidebar for Restaurants -->
+    <aside class="nav-sidebar" id="nav-sidebar">
+        <div class="nav-sidebar-header">
+            <i class="fa-solid fa-utensils logo-icon"></i>
+            <h2>Directory</h2>
+        </div>
+        <ul id="sidebar-restaurant-list" class="sidebar-restaurant-list">
+            <!-- Dynamically populated by JS -->
+        </ul>
+    </aside>
+
+    <div class="page-wrapper">
+        <header>
         <div class="header-container">
             <div class="logo">
                 <i class="fa-solid fa-utensils"></i>
@@ -36,7 +53,7 @@
     <main id="home">
         <section id="restaurants" class="restaurants-section">
             <div class="section-header">
-                <h2>Top 10 Picks</h2>
+                <h2>Top 10 <span>Picks</span></h2>
                 <p>Curated selections for the ultimate dining experience</p>
             </div>
             
@@ -92,9 +109,10 @@
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Peshawar Bites. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Peshawar Bites. All rights reserved.</p>
+        </footer>
+    </div> <!-- End page-wrapper -->
 
     <script src="script.js"></script>
 </body>

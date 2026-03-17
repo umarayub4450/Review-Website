@@ -232,7 +232,47 @@ const closeButton = document.querySelector('.close-button');
 // ===== INITIALIZATION =====
 function init() {
     renderRestaurants();
+    renderSidebar();
     setupEventListeners();
+    setupIntersectionObserver();
+}
+
+function renderSidebar() {
+    const sidebarList = document.getElementById('sidebar-restaurant-list');
+    if (!sidebarList) return;
+    
+    sidebarList.innerHTML = '';
+    restaurants.forEach((restaurant, index) => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="#rest-${restaurant.id}"><span class="nav-rank">${index + 1}</span> ${restaurant.name}</a>`;
+        li.addEventListener('click', (e) => {
+            e.preventDefault();
+            const card = document.getElementById(`rest-${restaurant.id}`);
+            if (card) {
+                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                card.classList.add('highlight-card');
+                setTimeout(() => card.classList.remove('highlight-card'), 2000);
+            }
+        });
+        sidebarList.appendChild(li);
+    });
+}
+
+function setupIntersectionObserver() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove('fade-in-hidden');
+                entry.target.classList.add('fade-in-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.restaurant-card').forEach(card => {
+        card.classList.add('fade-in-hidden');
+        observer.observe(card);
+    });
 }
 
 function renderRestaurants() {
@@ -241,13 +281,14 @@ function renderRestaurants() {
     restaurants.forEach((restaurant, index) => {
         const card = document.createElement('div');
         card.className = 'restaurant-card';
+        card.id = `rest-${restaurant.id}`;
         card.innerHTML = `
             <div class="restaurant-rank">#${index + 1}</div>
             <img src="${restaurant.image}" alt="${restaurant.name}" class="restaurant-img">
             <div class="restaurant-info">
                 <h3 class="restaurant-name">${restaurant.name}</h3>
                 <span class="restaurant-cuisine">${restaurant.cuisine}</span>
-                <p style="font-size: 0.9rem; margin-bottom: 1rem; color: #4b5563;">${restaurant.description.substring(0, 80)}...</p>
+                <p style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--text-muted);">${restaurant.description.substring(0, 80)}...</p>
                 <div class="restaurant-meta">
                     <div class="meta-item">
                         <i class="fa-solid fa-star"></i>
