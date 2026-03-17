@@ -56,6 +56,42 @@
         </div>
     </div>
 
+    <!-- Help Sidebar Toggle -->
+    <button id="help-toggle" class="help-toggle-btn">
+        <i class="fa-solid fa-headset"></i>
+    </button>
+
+    <!-- Help Sidebar Panel -->
+    <div id="help-sidebar" class="help-sidebar">
+        <div class="sidebar-header">
+            <h3><i class="fa-solid fa-circle-info"></i> How can we help?</h3>
+            <span id="close-sidebar" class="close-sidebar">&times;</span>
+        </div>
+        <div class="sidebar-content">
+            <p>Welcome to Peshawar Bites! Have a question about an order or a restaurant? Send us a message.</p>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <strong>Q: How long does delivery take?</strong>
+                    <p>A: Standard delivery takes 30-45 minutes depending on the rider you select.</p>
+                </div>
+                <div class="faq-item">
+                    <strong>Q: Are the reviews real?</strong>
+                    <p>A: Yes, all reviews are from verified diners.</p>
+                </div>
+            </div>
+
+            <form id="help-form" class="custom-form" style="margin-top:20px;">
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea class="form-control" rows="4" required placeholder="Type your query here..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+                <div id="help-msg" class="success-msg">Message sent! We will reply shortly.</div>
+            </form>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2026 Peshawar Bites. All rights reserved.</p>
     </footer>

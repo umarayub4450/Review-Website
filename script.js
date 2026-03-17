@@ -11,7 +11,12 @@ const restaurants = [
         menu: [
             { id: 101, name: "Mutton Karahi", desc: "Per Kg. Cooked in pure animal fat with tomatoes and green chilies.", price: 2800 },
             { id: 102, name: "Mutton Tikka", desc: "Per Dozen. Juicy, lightly spiced, grilled to perfection.", price: 1500 },
-            { id: 103, name: "Kabuli Pulao", desc: "Traditional rice dish with raisins, carrots, and tender meat.", price: 800 }
+            { id: 103, name: "Kabuli Pulao", desc: "Traditional rice dish with raisins, carrots, and tender meat.", price: 800 },
+            { id: 104, name: "Chicken Karahi", desc: "Per Kg. Traditional Peshawari style chicken.", price: 1800 },
+            { id: 105, name: "Charsi Special Naan", desc: "Freshly baked tandoori naan.", price: 50 },
+            { id: 106, name: "Mutton Champ", desc: "Spiced mutton chops grilled over charcoal.", price: 1600 },
+            { id: 107, name: "Dumba Karahi", desc: "Per Kg. Lamb cooked in its own fat.", price: 3000 },
+            { id: 108, name: "Peshawari Kehwa", desc: "Traditional green tea with cardamom.", price: 100 }
         ],
         reviews: [
             { id: 1, user: "Ahmed A.", text: "Best Karahi in the world. Absolute must-visit.", rating: 5 },
@@ -28,7 +33,12 @@ const restaurants = [
         description: "Famous since the 1950s for the most authentic and juicy Peshawar Chapli Kababs.",
         menu: [
             { id: 201, name: "Beef Chapli Kabab", desc: "Per Piece. Pan-fried minced beef patty with spices.", price: 250 },
-            { id: 202, name: "Chicken Chapli Kabab", desc: "Per Piece. Spiced minced chicken patty.", price: 200 }
+            { id: 202, name: "Chicken Chapli Kabab", desc: "Per Piece. Spiced minced chicken patty.", price: 200 },
+            { id: 203, name: "Mutton Chapli Kabab", desc: "Per Piece. Premium mutton mince kabab.", price: 350 },
+            { id: 204, name: "Special Raita", desc: "Mint and yogurt sauce.", price: 60 },
+            { id: 205, name: "Kandahari Naan", desc: "Large traditional flatbread.", price: 80 },
+            { id: 206, name: "Chicken Roast", desc: "Half chicken roasted with local spices.", price: 700 },
+            { id: 207, name: "Gajar Halwa", desc: "Traditional carrot dessert.", price: 250 }
         ],
         reviews: [
             { id: 1, user: "Raza Ali", text: "The crispiness on the outside and juiciness inside is unmatched.", rating: 5 }
@@ -45,7 +55,12 @@ const restaurants = [
         menu: [
             { id: 301, name: "Habibi Platter", desc: "Mixed BBQ, Rice, and Curries. Serves 4.", price: 4500 },
             { id: 302, name: "Chicken Handi", desc: "Boneless chicken cooked in a creamy sauce.", price: 1200 },
-            { id: 303, name: "Roghni Naan", desc: "Soft, buttery flatbread.", price: 80 }
+            { id: 303, name: "Roghni Naan", desc: "Soft, buttery flatbread.", price: 80 },
+            { id: 304, name: "Chicken Manchurian", desc: "Desi Chinese style chicken with gravy.", price: 950 },
+            { id: 305, name: "Egg Fried Rice", desc: "Classic Chinese fried rice.", price: 650 },
+            { id: 306, name: "Mutton Kunna", desc: "Traditional slow-cooked mutton.", price: 1600 },
+            { id: 307, name: "Seekh Kabab", desc: "Grilled minced meat skewers.", price: 600 },
+            { id: 308, name: "Pina Colada", desc: "Refreshing coconut and pineapple blend.", price: 350 }
         ],
         reviews: [
             { id: 1, user: "Zainab T.", text: "Great ambiance for families. The Handi is delicious.", rating: 4 }
@@ -61,7 +76,12 @@ const restaurants = [
         description: "High-end dining experience offering the best buffet in town with over 50 dishes.",
         menu: [
             { id: 401, name: "Dinner Buffet", desc: "Per Head. Unlimited access to 50+ dishes.", price: 2500 },
-            { id: 402, name: "Mutton Ribs", desc: "A la carte special. Slow roasted.", price: 3000 }
+            { id: 402, name: "Mutton Ribs", desc: "A la carte special. Slow roasted.", price: 3000 },
+            { id: 403, name: "Prawn Tempura", desc: "Crispy fried prawns.", price: 1200 },
+            { id: 404, name: "Mulligatawny Soup", desc: "Rich lentil and chicken soup.", price: 450 },
+            { id: 405, name: "Grilled Fish", desc: "Served with lemon butter sauce.", price: 1500 },
+            { id: 406, name: "Shahi Tukda", desc: "Royal bread pudding dessert.", price: 400 },
+            { id: 407, name: "Fresh Lime Sprite", desc: "Mint Margarita style.", price: 250 }
         ],
         reviews: [
             { id: 1, user: "Kamran M.", text: "Excellent variety and premium quality.", rating: 5 }
@@ -71,13 +91,18 @@ const restaurants = [
         id: 5,
         name: "Dumpukht",
         cuisine: "Traditional Slow-Cooked Meat",
-        image: "https://images.unsplash.com/photo-1544025162-811c42f0a514?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "dumpukht.jpg",
         rating: 4.8,
         reviewsCount: 600,
         description: "Specializes in 'Dumpukht', a method of slow-cooking meat in a sealed pot resulting in incredibly tender dishes.",
         menu: [
             { id: 501, name: "Mutton Dumpukht", desc: "Per Kg. Slow-cooked overnight.", price: 3200 },
-            { id: 502, name: "Rosh", desc: "Clear meat broth with a large cut of meat.", price: 1800 }
+            { id: 502, name: "Rosh", desc: "Clear meat broth with a large cut of meat.", price: 1800 },
+            { id: 503, name: "Namkeen Tikka", desc: "Salted BBQ meat chunks.", price: 1400 },
+            { id: 504, name: "Afghani Pulao", desc: "Sweet and savory rice dish.", price: 850 },
+            { id: 505, name: "Lamb Chops", desc: "Grilled to perfection.", price: 1700 },
+            { id: 506, name: "Mutton Joint Roast", desc: "Whole roasted mutton joint.", price: 4000 },
+            { id: 507, name: "Gur Wali Chai", desc: "Tea sweetened with jaggery.", price: 150 }
         ],
         reviews: [
             { id: 1, user: "Faizan K.", text: "Meat falls off the bone. Absolutely divine.", rating: 5 }
@@ -94,7 +119,12 @@ const restaurants = [
         menu: [
             { id: 601, name: "Crunch Burger", desc: "Signature beef burger with caramelized onions.", price: 850 },
             { id: 602, name: "Molten Lava Cake", desc: "With vanilla ice cream.", price: 550 },
-            { id: 603, name: "Latte", desc: "Freshly brewed espresso with steamed milk.", price: 450 }
+            { id: 603, name: "Latte", desc: "Freshly brewed espresso with steamed milk.", price: 450 },
+            { id: 604, name: "Alfredo Pasta", desc: "Fettuccine in creamy mushroom sauce.", price: 950 },
+            { id: 605, name: "Club Sandwich", desc: "Triple layered sandwich with fries.", price: 750 },
+            { id: 606, name: "Iced Caramel Macchiato", desc: "Chilled espresso drink.", price: 500 },
+            { id: 607, name: "Grilled Chicken Steak", desc: "Served with mashed potatoes and veg.", price: 1200 },
+            { id: 608, name: "Blueberry Cheesecake", desc: "Slice of rich baked cheesecake.", price: 550 }
         ],
         reviews: [
             { id: 1, user: "Ayesha S.", text: "Best coffee in Peshawar. Love the vibe.", rating: 4.5 }
@@ -110,7 +140,12 @@ const restaurants = [
         description: "Authentic Afghani flavors brought to Peshawar. Famous for their Manto and BBQ.",
         menu: [
             { id: 701, name: "Afghani Boti", desc: "Mildly spiced, tender beef skewers.", price: 900 },
-            { id: 702, name: "Manto", desc: "Meat dumplings served with yogurt sauce.", price: 700 }
+            { id: 702, name: "Manto", desc: "Meat dumplings served with yogurt sauce.", price: 700 },
+            { id: 703, name: "Ashak", desc: "Leek and scallion dumplings.", price: 650 },
+            { id: 704, name: "Borani Banjan", desc: "Fried eggplant with garlic yogurt.", price: 550 },
+            { id: 705, name: "Uzbeki Pulao", desc: "Rice with lamb, carrots, and raisins.", price: 950 },
+            { id: 706, name: "Bolani", desc: "Stuffed Afghan flatbread.", price: 400 },
+            { id: 707, name: "Doogh", desc: "Salty yogurt drink.", price: 150 }
         ],
         reviews: [
             { id: 1, user: "Daud J.", text: "Hidden gem for Afghani food.", rating: 4 }
@@ -126,7 +161,12 @@ const restaurants = [
         description: "Peshawar's iconic local fast food chain. A nostalgic favorite for many.",
         menu: [
             { id: 801, name: "Chief Special Burger", desc: "Double patty, egg, and cheese.", price: 550 },
-            { id: 802, name: "Crispy Broast", desc: "Quarter chicken served with fries and bun.", price: 650 }
+            { id: 802, name: "Crispy Broast", desc: "Quarter chicken served with fries and bun.", price: 650 },
+            { id: 803, name: "Zinger Burger", desc: "Crispy fried chicken breast.", price: 450 },
+            { id: 804, name: "Chicken Tikka Pizza", desc: "Medium size.", price: 1100 },
+            { id: 805, name: "Loaded Fries", desc: "Fries topped with cheese and chicken chunks.", price: 400 },
+            { id: 806, name: "Coleslaw", desc: "Fresh cabbage salad.", price: 120 },
+            { id: 807, name: "Chocolate Shake", desc: "Thick chocolate milkshake.", price: 300 }
         ],
         reviews: [
             { id: 1, user: "Omar P.", text: "Childhood memories attached. Quick and tasty.", rating: 4 }
@@ -142,7 +182,12 @@ const restaurants = [
         description: "Located in Pearl Continental Hotel, offering a premium open-air BBQ experience.",
         menu: [
             { id: 901, name: "Sikandari Raan", desc: "Whole roasted leg of lamb.", price: 5500 },
-            { id: 902, name: "Peshawari Chappal Kabab", desc: "Premium quality.", price: 1200 }
+            { id: 902, name: "Peshawari Chappal Kabab", desc: "Premium quality.", price: 1200 },
+            { id: 903, name: "Bataer Roast", desc: "Roasted Quail (Per piece).", price: 800 },
+            { id: 904, name: "Special Malai Boti", desc: "Creamy chicken skewers.", price: 1500 },
+            { id: 905, name: "Nihari", desc: "Slow-cooked beef stew.", price: 1800 },
+            { id: 906, name: "Garlic Naan", desc: "Fresh from tandoor.", price: 150 },
+            { id: 907, name: "Rabri", desc: "Condensed milk dessert.", price: 600 }
         ],
         reviews: [
             { id: 1, user: "Nadia R.", text: "Expensive but the quality and service are 5 star.", rating: 5 }
@@ -158,7 +203,12 @@ const restaurants = [
         description: "Focusing solely on bringing the best Pilaf dishes from across Central Asia.",
         menu: [
             { id: 1001, name: "Uzbek Pulao", desc: "Served with quail eggs and horse meat sausage.", price: 1500 },
-            { id: 1002, name: "Sajji", desc: "Roasted whole chicken.", price: 1800 }
+            { id: 1002, name: "Sajji", desc: "Roasted whole chicken.", price: 1800 },
+            { id: 1003, name: "Shashlik", desc: "Central Asian style meat skewers.", price: 1200 },
+            { id: 1004, name: "Samsa", desc: "Baked pastry with meat filling.", price: 300 },
+            { id: 1005, name: "Lagman", desc: "Hand-pulled noodle soup.", price: 850 },
+            { id: 1006, name: "Mutton Balochi Tikka", desc: "Spicy and tangy small mutton pieces.", price: 1600 },
+            { id: 1007, name: "Chilled Ayran", desc: "Salty yogurt beverage.", price: 150 }
         ],
         reviews: [
             { id: 1, user: "Usman A.", text: "Different from local pulao, very unique and flavorful.", rating: 4.5 }
@@ -474,6 +524,39 @@ window.submitSuggestion = function(e) {
 
     setTimeout(() => msg.style.display = 'none', 3000);
 }
+
+// ===== HELPER SIDEBAR LOGIC =====
+const helpSidebar = document.getElementById('help-sidebar');
+const helpToggle = document.getElementById('help-toggle');
+const closeSidebar = document.getElementById('close-sidebar');
+const helpForm = document.getElementById('help-form');
+
+helpToggle.addEventListener('click', () => {
+    helpSidebar.classList.add('open');
+});
+
+closeSidebar.addEventListener('click', () => {
+    helpSidebar.classList.remove('open');
+});
+
+// Close sidebar on click outside
+window.addEventListener('click', (e) => {
+    if (helpSidebar.classList.contains('open') && 
+        !helpSidebar.contains(e.target) && 
+        e.target !== helpToggle && 
+        !helpToggle.contains(e.target)) {
+        helpSidebar.classList.remove('open');
+    }
+});
+
+helpForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const msg = document.getElementById('help-msg');
+    msg.style.display = 'block';
+    e.target.reset();
+
+    setTimeout(() => msg.style.display = 'none', 3000);
+});
 
 // Run init
 window.onload = init;
